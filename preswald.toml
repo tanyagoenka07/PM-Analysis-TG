@@ -1,0 +1,20 @@
+[project]
+title = "PM2.5 Dashboard"
+version = "0.1.0"
+port = 8501
+slug = "pm25-dashboard"
+entrypoint = "pm25_app.py"
+
+[branding]
+name = "PM2.5 by Tanya Goyanka"
+logo = "images/Logo.png"
+favicon = "images/tg.ico"
+primaryColor = "#E74C3C"
+
+[data.pm25]
+type = "csv"
+path = "data/pm2.5AirPollution2010-2017.csv"
+
+[logging]
+level = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
